@@ -13,9 +13,16 @@
 		9FD25534209991A800B0E016 /* AnimationApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FD25532209991A800B0E016 /* AnimationApp.xcdatamodeld */; };
 		9FD25536209991A800B0E016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD25535209991A800B0E016 /* Assets.xcassets */; };
 		9FD25539209991A800B0E016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD25537209991A800B0E016 /* LaunchScreen.storyboard */; };
+		9FD25541209991C800B0E016 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD25540209991C800B0E016 /* SecondVC.swift */; };
+		9FD2555720999C3500B0E016 /* BCMagicTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2555420999C3500B0E016 /* BCMagicTransition.m */; };
+		9FD2555820999C3500B0E016 /* UIViewController+BCMagicTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2555620999C3500B0E016 /* UIViewController+BCMagicTransition.m */; };
+		B552C667782F321542FC19A0 /* Pods_AnimationApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11085F02C84500F9B37B8625 /* Pods_AnimationApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11085F02C84500F9B37B8625 /* Pods_AnimationApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimationApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5822175FA7058B343E10A24C /* Pods-AnimationApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationApp/Pods-AnimationApp.release.xcconfig"; sourceTree = "<group>"; };
+		5DF453E5511B6A2AE4D5BEEA /* Pods-AnimationApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationApp/Pods-AnimationApp.debug.xcconfig"; sourceTree = "<group>"; };
 		9FD25528209991A800B0E016 /* AnimationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD2552B209991A800B0E016 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FD2552D209991A800B0E016 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +31,12 @@
 		9FD25535209991A800B0E016 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FD25538209991A800B0E016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FD2553A209991A800B0E016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FD25540209991C800B0E016 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		9FD2555220999C3400B0E016 /* AnimationApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AnimationApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		9FD2555320999C3500B0E016 /* UIViewController+BCMagicTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BCMagicTransition.h"; sourceTree = "<group>"; };
+		9FD2555420999C3500B0E016 /* BCMagicTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCMagicTransition.m; sourceTree = "<group>"; };
+		9FD2555520999C3500B0E016 /* BCMagicTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCMagicTransition.h; sourceTree = "<group>"; };
+		9FD2555620999C3500B0E016 /* UIViewController+BCMagicTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BCMagicTransition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +44,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B552C667782F321542FC19A0 /* Pods_AnimationApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		832803148B8D9D0CDEFCA47C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11085F02C84500F9B37B8625 /* Pods_AnimationApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9174D7341CBD79B09B9470A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DF453E5511B6A2AE4D5BEEA /* Pods-AnimationApp.debug.xcconfig */,
+				5822175FA7058B343E10A24C /* Pods-AnimationApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9FD2551F209991A800B0E016 = {
 			isa = PBXGroup;
 			children = (
 				9FD2552A209991A800B0E016 /* AnimationApp */,
 				9FD25529209991A800B0E016 /* Products */,
+				9174D7341CBD79B09B9470A2 /* Pods */,
+				832803148B8D9D0CDEFCA47C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +89,10 @@
 		9FD2552A209991A800B0E016 /* AnimationApp */ = {
 			isa = PBXGroup;
 			children = (
+				9FD2554520999BB700B0E016 /* BCMagicTransition */,
 				9FD2552B209991A800B0E016 /* AppDelegate.swift */,
 				9FD2552D209991A800B0E016 /* ViewController.swift */,
+				9FD25540209991C800B0E016 /* SecondVC.swift */,
 				9FD2552F209991A800B0E016 /* Main.storyboard */,
 				9FD25535209991A800B0E016 /* Assets.xcassets */,
 				9FD25537209991A800B0E016 /* LaunchScreen.storyboard */,
@@ -67,6 +102,18 @@
 			path = AnimationApp;
 			sourceTree = "<group>";
 		};
+		9FD2554520999BB700B0E016 /* BCMagicTransition */ = {
+			isa = PBXGroup;
+			children = (
+				9FD2555520999C3500B0E016 /* BCMagicTransition.h */,
+				9FD2555420999C3500B0E016 /* BCMagicTransition.m */,
+				9FD2555320999C3500B0E016 /* UIViewController+BCMagicTransition.h */,
+				9FD2555620999C3500B0E016 /* UIViewController+BCMagicTransition.m */,
+				9FD2555220999C3400B0E016 /* AnimationApp-Bridging-Header.h */,
+			);
+			path = BCMagicTransition;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +121,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FD2553D209991A800B0E016 /* Build configuration list for PBXNativeTarget "AnimationApp" */;
 			buildPhases = (
+				53BC9CA85EEE3D4ACAF5F71F /* [CP] Check Pods Manifest.lock */,
 				9FD25524209991A800B0E016 /* Sources */,
 				9FD25525209991A800B0E016 /* Frameworks */,
 				9FD25526209991A800B0E016 /* Resources */,
@@ -99,6 +147,7 @@
 				TargetAttributes = {
 					9FD25527209991A800B0E016 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -134,14 +183,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		53BC9CA85EEE3D4ACAF5F71F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimationApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9FD25524209991A800B0E016 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FD2555820999C3500B0E016 /* UIViewController+BCMagicTransition.m in Sources */,
 				9FD2552E209991A800B0E016 /* ViewController.swift in Sources */,
 				9FD25534209991A800B0E016 /* AnimationApp.xcdatamodeld in Sources */,
+				9FD25541209991C800B0E016 /* SecondVC.swift in Sources */,
 				9FD2552C209991A800B0E016 /* AppDelegate.swift in Sources */,
+				9FD2555720999C3500B0E016 /* BCMagicTransition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,14 +349,18 @@
 		};
 		9FD2553E209991A800B0E016 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DF453E5511B6A2AE4D5BEEA /* Pods-AnimationApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 228777C638;
 				INFOPLIST_FILE = AnimationApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WOS.AnimationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AnimationApp/BCMagicTransition/AnimationApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -291,14 +368,17 @@
 		};
 		9FD2553F209991A800B0E016 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5822175FA7058B343E10A24C /* Pods-AnimationApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 228777C638;
 				INFOPLIST_FILE = AnimationApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WOS.AnimationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AnimationApp/BCMagicTransition/AnimationApp-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
