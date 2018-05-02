@@ -33,10 +33,8 @@ class ViewController: UIViewController, BCMagicTransitionProtocol  {
         objSecondVC.loadView()
         
         //self.push(objSecondVC, from: viewPhoto, to: objSecondVC.viewPhoto, duration: 0.50)
-        self.push(objSecondVC,
-                  fromViews: [imgPhoto, viewPhoto, btnDownload],
-                  toViews: [objSecondVC.imgPhoto, objSecondVC.viewPhoto, objSecondVC.btnDounloadComplet],
-                  duration: 0.50)
+        self.push(objSecondVC, fromViews: [viewPhoto, btnDownload], toViews: [objSecondVC.viewPhoto, objSecondVC.btnDounloadComplet], duration: 0.50)
+        //self.push(objSecondVC, fromViews: [imgPhoto, viewPhoto, btnDownload], toViews: [objSecondVC.imgPhoto, objSecondVC.viewPhoto, objSecondVC.btnDounloadComplet], duration: 0.50)
         
     }
 }

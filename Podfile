@@ -7,6 +7,7 @@ target 'AnimationApp' do
 
   # Pods for AnimationApp
 
-# https://github.com/boycechang/BCMagicTransition.git
-# pod 'BCMagicTransition' 
+# Manage Animation | https://github.com/boycechang/BCMagicTransition.git
+# pod 'BCMagicTransition'
+
 end

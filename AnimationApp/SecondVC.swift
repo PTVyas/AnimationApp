@@ -21,16 +21,21 @@ class SecondVC: UIViewController, BCMagicTransitionProtocol {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        self.view.layoutIfNeeded()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     @IBAction func btnBackAction() {
         self.navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func btnDounloadCompAction() {
+        self.btnBackAction()
     }
     
     /*
